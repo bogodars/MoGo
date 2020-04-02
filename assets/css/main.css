@@ -643,3 +643,141 @@ padding: 50px 0;
 .section--gray {
     background-color: #f8f8f8;
 }
+
+/* WORKS SECTION */
+
+.works {
+    display: flex;
+}
+
+.works__col {
+    flex: 1 1 0;
+}
+
+.works__item {
+    position: relative;
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+}
+
+.works__item:hover .works__image {
+    opacity: .1;
+}
+
+.works__item:hover .works__info {
+    opacity: 1;
+}
+
+.works__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: opacity .2s linear;
+}
+
+.works__info {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate3d(0, -50%, 0);
+    transition: opacity .2s linear;
+    width: 100%;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding: 0 15px;
+    opacity: 0;
+}
+
+.works__title {
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.works__text {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+.quote-item2 {
+ padding-left: 255px;
+  position : relative;
+}
+
+.quote__photo2 {
+    position: absolute;
+    top: -22px;
+    left: 0;
+    z-index: 1;
+}
+
+.quote2 {
+    padding: 100px 0 130px 0;
+}
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.clients__item {
+    width: 50%;
+    padding: 0 45px 0 175px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.clients__photo {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.clients__name {
+   
+    color: #333;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 14px;
+
+
+}
+
+.clients__prof {
+    font-size: 15px;
+    color: #333;
+    font-style: italic;
+    font-family: "Roboto - Light Italic";
+    font-weight: 400;
+    line-height: 24px;
+     margin: 15px 0 0 ;
+}
+
+.clients__text {
+color: #999;
+font-family: Roboto;
+font-weight: 400;
+line-height: 24px;
+}
+
+
+.clients__text::before{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 15px 0;
+}
+
+.sections-clients {
+background: url(../img/whatps-bg.png) center no-repeat;
+background-size: cover;
+}
