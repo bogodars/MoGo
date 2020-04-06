@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;0,700;1,300&family=Roboto:ital,wght@1,300;1,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <title>MoGo</title>
 </head>
 
@@ -14,7 +15,10 @@
     <header class="header" id='header'>
         <div class="container">
             <div class="header__inner">
-                <div class="header__logo">MoGo</div>
+                <a href="index.html">
+                    <div class="header__logo">MoGo</div>
+                </a>
+
 
                 <nav class="nav" id="nav">
                     <a class="nav__link active" href="#" data-scroll="#about">About</a>
@@ -284,14 +288,28 @@
         <section class="quote">
             <div class="container">
                 <div class="quote-body">
-                    <a href="#" class="quote-body__btn quote-body__btn--prev">Prev</a>
-                    <a href="#" class="quote-body__btn quote-body__btn--next">Next</a>
-                    <div class="quote-item">
-                        <img src="./assets/img/quote.png" alt="" class="quote__photo" />
-                        <div class="quote__text">
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+
+
+                    <div data-slider>
+                        <div>
+                            <div class="quote-item">
+                                <img src="./assets/img/quote.png" alt="" class="quote__photo" />
+                                <div class="quote__text">
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                </div>
+                                <div class="quote__author">Jon Doe</div>
+                            </div>
                         </div>
-                        <div class="quote__author">Jon Doe</div>
+
+                        <div>
+                            <div class="quote-item">
+                                <img src="./assets/img/quote.png" alt="" class="quote__photo" />
+                                <div class="quote__text">
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                </div>
+                                <div class="quote__author">Jon Doe</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -495,14 +513,26 @@
         <section class="quote">
             <div class="container">
                 <div class="quote-body">
-                    <a href="#" class="quote-body__btn quote-body__btn--prev">Prev</a>
-                    <a href="#" class="quote-body__btn quote-body__btn--next">Next</a>
-                    <div class="quote-item">
-                        <img src="./assets/img/avatar.png" alt="" class=" quote__photo2" />
-                        <div class="quote__text">
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                    <div data-slider>
+                        <div>
+                            <div class="quote-item">
+                                <img src="./assets/img/avatar.png" alt="" class="quote__photo" />
+                                <div class="quote__text">
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                </div>
+                                <div class="quote__author">Jon Doe</div>
+                            </div>
                         </div>
-                        <div class="quote__author">Jon Doe</div>
+
+                        <div>
+                            <div class="quote-item">
+                                <img src="./assets/img/avatar.png" alt="" class="quote__photo" />
+                                <div class="quote__text">
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                </div>
+                                <div class="quote__author">Jon Doe</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -817,6 +847,7 @@
         <!-- page-->
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="./assets/js/app.js"></script>
 </body>
 

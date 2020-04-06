@@ -20,6 +20,10 @@ h5 {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* Container */
 
@@ -578,16 +582,23 @@ hr {
 /*  QUOTE SECTION */
 
 .quote-body {
-    padding: 0 110px;
     position: relative;
+}
+
+.quote-body .slick-slider {
+    padding: 0 110px;
 }
 
 .quote-item {
-    padding-left: 205px;
+    padding-left: 255px;
     position: relative;
+    min-height: 210px;
 }
 
 .quote__photo {
+    display: block;
+    width: 200px;
+    height: 200px;
     position: absolute;
     top: 0;
     left: 0;
@@ -599,7 +610,7 @@ hr {
     font-family: "Roboto", sans-serif;
     font-style: italic;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 36px;
 }
 
@@ -620,7 +631,8 @@ hr {
     background-color: #f38181;
 }
 
-.quote-body__btn {
+.slick-arrow {
+    display: block;
     font-size: 0;
     color: transparent;
     position: absolute;
@@ -628,9 +640,16 @@ hr {
     z-index: 1;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    border: 0;
+    background: 0;
+    cursor: pointer;
 }
 
-.quote-body__btn::after {
+.slick-arrow:focus {
+    outline: 0;
+}
+
+.slick-arrow::after {
     content: "";
     display: block;
     width: 16px;
@@ -639,13 +658,14 @@ hr {
     border-left: 2px solid #ccc;
 }
 
-.quote-body__btn--prev {
+.slick-prev {
     left: 0;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
-.quote-body__btn--next {
+.quote-body__btn--next,
+.slick-next {
     right: 0;
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
@@ -655,6 +675,9 @@ hr {
     padding: 70px 0 70px 0;
     background-color: #f8f8f8;
 }
+
+
+/* Social */
 
 .social__item {
     width: 55px;
@@ -1311,6 +1334,12 @@ hr {
 }
 
 @media (max-width: 1230px) {
+    .hero-bg__undertitle {
+        font-size: 52px;
+    }
+    .hero-bg__title {
+        font-size: 120px;
+    }
     .quote__text {
         font-size: 18px;
     }
@@ -1352,6 +1381,13 @@ hr {
     .instagram__item {
         width: auto;
         border-right: 1px solid #fff;
+    }
+    .quote-body .slick-slider {
+        padding: 0 60px;
+    }
+    .quote__photo {
+        width: 150px;
+        height: 150px;
     }
 }
 
@@ -1402,10 +1438,6 @@ hr {
     }
     .quote__text {
         line-height: 1.2;
-    }
-    .quote__photo,
-    .quote__photo2 {
-        display: none;
     }
     .quote-item {
         padding-left: 0;
@@ -1502,13 +1534,19 @@ hr {
     .footer__col--third {
         width: 100%;
     }
+    .slick-slide img {
+        display: none !important;
+    }
 }
 
 @media (max-width: 575px) {
+    .slick-slide img {
+        display: none;
+    }
     .quote__text {
         padding: 0 15px;
     }
-    .quote-body {
+    .quote-body .slick-slider {
         padding: 0 10px;
     }
     /* Hero block */
